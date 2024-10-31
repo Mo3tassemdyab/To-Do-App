@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-box">
+                    <div class="todo-app">
+                        <h2>To-Do List <img src="images/icon.png" alt=""> </h2>
+                        <div class="row-box">
+                            <input type="text" oninput="validInput()" id="input-box" placeholder="Add your text">
+                            <button onclick="addTask()">Add</button>
+                        </div>
+                        <p class="inValid"  id="invalidText">Name Is Invalid</p>
+               
+                        <ul id="list-container">
+                            <!-- <li class="checked">Task 1</li>
+                            <li>Task 2</li>
+                            <li>Task 3</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
